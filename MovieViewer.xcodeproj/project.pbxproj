@@ -12,6 +12,7 @@
 		CD398DD31C3E58750083E088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD398DD21C3E58750083E088 /* Assets.xcassets */; };
 		CD398DD61C3E58750083E088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD398DD41C3E58750083E088 /* LaunchScreen.storyboard */; };
 		CD398DE01C3E5F310083E088 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD398DDF1C3E5F310083E088 /* MoviesViewController.swift */; };
+		CD398DE31C3EB3EE0083E088 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD398DE21C3EB3EE0083E088 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CD398DD51C3E58750083E088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD398DD71C3E58750083E088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD398DDF1C3E5F310083E088 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		CD398DE21C3EB3EE0083E088 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		CD398DCA1C3E58750083E088 /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				CD398DE11C3EB2610083E088 /* Views */,
 				CD398DCB1C3E58750083E088 /* AppDelegate.swift */,
 				CD398DCF1C3E58750083E088 /* Main.storyboard */,
 				CD398DD21C3E58750083E088 /* Assets.xcassets */,
@@ -62,6 +65,14 @@
 				CD398DDF1C3E5F310083E088 /* MoviesViewController.swift */,
 			);
 			path = MovieViewer;
+			sourceTree = "<group>";
+		};
+		CD398DE11C3EB2610083E088 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD398DE21C3EB3EE0083E088 /* MovieCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			files = (
 				CD398DCC1C3E58750083E088 /* AppDelegate.swift in Sources */,
 				CD398DE01C3E5F310083E088 /* MoviesViewController.swift in Sources */,
+				CD398DE31C3EB3EE0083E088 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
