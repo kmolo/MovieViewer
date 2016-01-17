@@ -28,7 +28,6 @@ DerivedData/
 !default.perspectivev3
 *.xccheckout
 *.xcscmblueprint
-*.xcworkspace
 *.xcuserstate
 xcuserdata
 *.moved-aside
