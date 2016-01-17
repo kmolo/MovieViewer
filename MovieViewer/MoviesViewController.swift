@@ -72,11 +72,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
 
-        let posterPath = movie["poster_path"] as! String
-        let baseURL = "http://image.tmdb.org/t/p/w500"
-        let imageURL = NSURL(string: baseURL + posterPath)
-        print("imageURL = \(imageURL!)")
-        
         
         //cell.textLabel!.text = "row \(indexPath.row)"
         //cell.textLabel!.text = title
@@ -84,8 +79,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         //print("row \(indexPath.row)")
 
         cell.overviewLabel.text = overview
-        cell.posterView.setImageWithURL(imageURL!)
+        
+        if let posterPath = movie["poster_path"] as? String {
+            print(posterPath.dynamicType)
+            let baseURL = "http://image.tmdb.org/t/p/w500"
+            let imageURL = NSURL(string: baseURL + posterPath)
             
+            cell.posterView.setImageWithURL(imageURL!)
+        }
+        else {
+            // No poster image. Can either set to nil (no image) or a default movie poster image
+            // that you include as an asset
+            cell.posterView.image = nil
+        }
+        
         return cell
     }
     
