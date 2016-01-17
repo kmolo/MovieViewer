@@ -75,7 +75,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let posterPath = movie["poster_path"] as! String
         let baseURL = "http://imagetmdb.org/t/p/w500"
         let imageURL = NSURL(string: baseURL + posterPath)
-
         
         
         //cell.textLabel!.text = "row \(indexPath.row)"
@@ -84,9 +83,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         //print("row \(indexPath.row)")
 
         cell.overviewLabel.text = overview
-        
-        cell.posterView.setImageWithURL(imageURL)
-        
+        cell.posterView.setImageWithURL(imageURL!)
         
         return cell
     }
