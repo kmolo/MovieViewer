@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![walkthrough](flicks2.gif)
+<img src='http://i.imgur.com/wUzWcUb.gif' title='MovieViewer Walkthrough' width='' alt='MovieViewer Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
