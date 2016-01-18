@@ -46,11 +46,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                         data, options:[]) as? NSDictionary {
                             NSLog("response: \(responseDictionary)")
                             
-                            self.movies = responseDictionary["results"] as! [NSDictionary]
-                            self.tableView.reloadData()
+                        // Hide HUD once network request comes back (must be done on main UI thread)
+                        self.delay(1,closure: { MBProgressHUD.hideHUDForView(self.view, animated: true) })
                             
-                            // Hide HUD once network request comes back (must be done on main UI thread)
-                            MBProgressHUD.hideHUDForView(self.view, animated: true)
+                        self.movies = responseDictionary["results"] as! [NSDictionary]
+                        self.tableView.reloadData()
                             
                     }
                 }
@@ -98,6 +98,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         }
         
         return cell
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+        
     }
     
 
