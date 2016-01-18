@@ -50,7 +50,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                             NSLog("response: \(responseDictionary)")
                             
                         // Hide HUD once network request comes back (must be done on main UI thread)
-                        self.delay(1,closure: { MBProgressHUD.hideHUDForView(self.view, animated: true) })
+                        self.delay(1,closure: {
+                            MBProgressHUD.hideHUDForView(self.view, animated: true)
+                        })
                             
                         self.movies = responseDictionary["results"] as! [NSDictionary]
                         self.tableView.reloadData()
