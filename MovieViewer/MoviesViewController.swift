@@ -15,6 +15,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     var movies: [NSDictionary]?
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         // Initialize a UIRefreshControl
         let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
+        tableView.insertSubview(refreshControl, atIndex: 0)
         
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
         let url = NSURL(string:"https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
@@ -98,6 +101,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         }
         
         return cell
+    }
+    
+    func refreshControlAction(refreshControl: UIRefreshControl) {
+        
+        // Make network request to fetch latest data
+        
+        // Do the following when the network request comes back successfully:
+        // Update tableView data source
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
     }
     
     func delay(delay:Double, closure:()->()) {
