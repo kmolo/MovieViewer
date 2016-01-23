@@ -49,7 +49,7 @@
                                             <outlet property="overviewLabel" destination="b2k-Z4-zyX" id="oOi-Z9-Qd8"/>
                                             <outlet property="posterView" destination="NqG-hk-sem" id="08z-KH-39D"/>
                                             <outlet property="titleLabel" destination="6EF-cz-zLR" id="UCh-pg-uaM"/>
-                                            <segue destination="dNl-D6-X5G" kind="push" id="vlf-hK-jaS"/>
+                                            <segue destination="dNl-D6-X5G" kind="push" id="nkr-ZY-dBZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
