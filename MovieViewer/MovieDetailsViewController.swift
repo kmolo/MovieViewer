@@ -19,9 +19,13 @@ class MovieDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(movie)
-
         // Do any additional setup after loading the view.
+        let title = movie["title"] as? String
+        titleLabelDetail.text = title
+        
+        let overview = movie["overview"]
+        overviewLabelDetail.text = overview as? String
+        
     }
 
     override func didReceiveMemoryWarning() {
