@@ -26,6 +26,18 @@ class MovieDetailsViewController: UIViewController {
         let overview = movie["overview"]
         overviewLabelDetail.text = overview as? String
         
+        if let posterPath = movie["poster_path"] as? String {
+            let baseURL = "http://image.tmdb.org/t/p/w500"
+            let imageURL = NSURL(string: baseURL + posterPath)
+            
+            posterViewDetail.setImageWithURL(imageURL!)
+        }
+        else {
+            // No poster image. Can either set to nil (no image) or a default movie poster image
+            // that you include as an asset
+            posterViewDetail.image = nil
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
