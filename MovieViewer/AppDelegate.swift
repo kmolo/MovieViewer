@@ -16,6 +16,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // get bounds of main screen
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        // get storyboard reference - default name is Main
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // create NavigationController + ViewController for now_playing endpoint
+        // "MoviesNavigationController" is Storyboard ID created in Identity Inspector of NavigationController on Main.storyboard
+        let nowPlayingNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
+        let nowPlayingViewController = nowPlayingNavigationController.topViewController as! MoviesViewController  //5:45
+        nowPlayingViewController.endpoint = "now_playing"
+        
+        // create NavigationController + ViewController for top_rated endpoint
+        // "MoviesNavigationController" is Storyboard ID created in Identity Inspector of NavigationController on Main.storyboard
+        let topRatedNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
+        let topRatedViewController = topRatedNavigationController.topViewController as! MoviesViewController
+        topRatedViewController.endpoint = "top_rated"
+        
+        // create tabBar programmatically
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [nowPlayingNavigationController,topRatedNavigationController]
+        
+        // programmatically set rootViewController
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
