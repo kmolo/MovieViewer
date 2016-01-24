@@ -1,4 +1,4 @@
-# Project 1 - *MovieViewer*
+# Week 1 - *MovieViewer*
 
 **MovieViewer** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
@@ -36,10 +36,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
----
-# Project 2 - *MovieViewer (Week 2)*
 
-**MovieViewer (Week 2)** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+---
+# Week 2 - *MovieViewer*
+
+**Week 2 - MovieViewer** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 Time spent: **X** hours spent in total
 
