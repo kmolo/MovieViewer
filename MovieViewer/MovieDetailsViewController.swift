@@ -9,9 +9,17 @@
 import UIKit
 
 class MovieDetailsViewController: UIViewController {
+    
+    @IBOutlet weak var posterViewDetail: UIImageView!
+    @IBOutlet weak var titleLabelDetail: UILabel!
+    @IBOutlet weak var overviewLabelDetail: UILabel!
+    
+    var movie: NSDictionary!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(movie)
 
         // Do any additional setup after loading the view.
     }
