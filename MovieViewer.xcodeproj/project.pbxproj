@@ -10,11 +10,11 @@
 		AD9E945E3C862ED40B0A582D /* Pods_MovieViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B49244BF81EAFB0A6661D65 /* Pods_MovieViewer.framework */; };
 		CD398DCC1C3E58750083E088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD398DCB1C3E58750083E088 /* AppDelegate.swift */; };
 		CD398DD11C3E58750083E088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD398DCF1C3E58750083E088 /* Main.storyboard */; };
-		CD398DD31C3E58750083E088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD398DD21C3E58750083E088 /* Assets.xcassets */; };
 		CD398DD61C3E58750083E088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD398DD41C3E58750083E088 /* LaunchScreen.storyboard */; };
 		CD398DE01C3E5F310083E088 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD398DDF1C3E5F310083E088 /* MoviesViewController.swift */; };
 		CD398DE31C3EB3EE0083E088 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD398DE21C3EB3EE0083E088 /* MovieCell.swift */; };
 		CDB49CF51C53FEB500896099 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB49CF41C53FEB500896099 /* MovieDetailsViewController.swift */; };
+		CDB49CF71C55BF5600896099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB49CF61C55BF5600896099 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +24,12 @@
 		CD398DC81C3E58750083E088 /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD398DCB1C3E58750083E088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD398DD01C3E58750083E088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD398DD21C3E58750083E088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD398DD51C3E58750083E088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD398DD71C3E58750083E088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD398DDF1C3E5F310083E088 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		CD398DE21C3EB3EE0083E088 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		CDB49CF41C53FEB500896099 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		CDB49CF61C55BF5600896099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 				CD398DE11C3EB2610083E088 /* Views */,
 				CD398DCB1C3E58750083E088 /* AppDelegate.swift */,
 				CD398DCF1C3E58750083E088 /* Main.storyboard */,
-				CD398DD21C3E58750083E088 /* Assets.xcassets */,
+				CDB49CF61C55BF5600896099 /* Assets.xcassets */,
 				CD398DD41C3E58750083E088 /* LaunchScreen.storyboard */,
 				CD398DD71C3E58750083E088 /* Info.plist */,
 			);
@@ -173,7 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD398DD61C3E58750083E088 /* LaunchScreen.storyboard in Resources */,
-				CD398DD31C3E58750083E088 /* Assets.xcassets in Resources */,
+				CDB49CF71C55BF5600896099 /* Assets.xcassets in Resources */,
 				CD398DD11C3E58750083E088 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
