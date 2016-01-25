@@ -94,3 +94,17 @@ Describe any challenges encountered while building the app.
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+---
+## Icon Licenses
+
+#### Tickets
+  ![tickets_png](MovieViewer/Assets.xcassets/tickets-Small-50.imageset/tickets-Small-50@2x.png)
+  
+  Created by [Arthur Lacôte from the Noun Project](https://thenounproject.com/turo/): licensed as Creative Commons – Attribution (CC BY 3.0)
+  
+---  
+#### Star
+  ![star_png](MovieViewer/Assets.xcassets/star-Small-50.imageset/star-Small-50@2x.png)
+  
+  Created by [Gislene Carvalho from the Noun Project](https://thenounproject.com/GiDelBosque/): licensed as Creative Commons – Attribution (CC BY 3.0)
