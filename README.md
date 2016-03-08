@@ -31,6 +31,8 @@ Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/wUzWcUb.gif' title='MovieViewer Walkthrough' width='' alt='MovieViewer Walkthrough' />
 
+[<img src="http://i.imgur.com/wUzWcUb.gif">](https://github.com/Monte9/Portfolio)
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
